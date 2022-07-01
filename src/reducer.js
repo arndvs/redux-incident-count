@@ -1,6 +1,6 @@
 import { INCREMENT, DECREMENT, SET } from './actions';
 
-export const initialState = { count: 0 };
+export const initialState = { count: 400 };
 
 // best practice : all the details how to get the state in the right format should happen in the reducer.
 // If logic needs to change, there's only one place to change it.

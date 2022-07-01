@@ -1,6 +1,8 @@
+import { useSelector } from 'react-redux';
+
 export const Counter = () => {
-  const incident = " Eating a Rocky's Hamburger";
-  const count = 0;
+  const incident = "Eating a Rocky's Hamburger";
+  const count = useSelector((state) => state.count);
 
   return (
     <main className="Counter">
