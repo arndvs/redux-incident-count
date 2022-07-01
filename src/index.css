@@ -1,13 +1,64 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html,
+body,
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  text-align: center;
+}
+
+button,
+input[type='submit'] {
+  background-color: magenta;
+  border: 5px solid lighten(magenta, 30%);
+  color: white;
+  margin: 0 0.5em;
+  padding: 1em;
+  outline: none;
+  &:hover {
+    background-color: darken(magenta, 5%);
+  }
+  &:active {
+    background-color: darken(magenta, 10%);
+  }
+}
+
+input {
+  padding: 1em;
+  &:not([type='submit']) {
+    display: block;
+    margin: 0.5em;
+  }
+}
+
+form {
+  padding: 0.5em;
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+  label {
+    text-align: center;
+    display: block;
+    margin-bottom: 0.5em;
+  }
+}
+
+.Counter {
+  border: 5px solid lighten(magenta, 40%);
+  font-weight: 700;
+  margin: 2em auto;
+  padding: 1em;
+  width: 600px;
+}
+
+.count {
+  font-size: 8em;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
 }
